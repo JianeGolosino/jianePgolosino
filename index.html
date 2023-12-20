@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jiane.</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="./img/logo.png" type="image/x-icon">
+</head>
+<body>
+
+  <!--header site----------------------------------------------------------------------->
+    <header>
+          <div class="logo"><span>J</span>iane.</div>
+          <ul class="navlist">
+              <li><a href="#home" style="--i:1;">Home</a></li>
+              <li><a href="#blog" style="--i:2;">IT111 Blog Entries</a></li>
+              <li><a href="#flex" style="--i:3;">Flex</a></li>
+          </ul>
+          <div id="menu-icon" class="bx bx-menu"></div>
+    </header>
+
+
+    <!--home section--------------------------------------------------------------------->
+    <section id="home" class="home">
+        <div class="home-content scroll-scale">
+            <h1>Hi! I'm Jiane Golosino</h1>
+            <div class="change-text">
+                <h3>And I'm a</h3>
+                <h3>
+                    <span class="word">Web&nbsp;Designer</span>
+                    <span class="word">Digital&nbsp; Artist</span>
+                    <span class="word">Traditional&nbsp; Artist</span>
+                    <span class="word">Programmer</span>
+                    <span class="word">Animator</span>
+                    <span class="word">Writer</span>
+                </h3>
+            </div>
+
+            <p>I have a passion for producing artistic creations in both digital and traditional mediums, coupled with a keen interest in acquiring skills related to webpage design.</p>
+
+            <div class="info-box">
+                <div class="email-info">
+                    <h5>Email :</h5>
+                    <span>2301106706@student.buksu.edu.ph</span>
+                </div>
+            </div>
+         <div class="btn-box">
+              <img src="./img/play.png" id="icon">
+        </div>
+
+        <audio id="bgSong">
+            <source src="./NewJeans (뉴진스) 'Tell me (FRNK Remix)'.mp4" type="audio/mp3">
+        </audio>
+
+        <script>
+            var bgSong = document.getElementById("bgSong");
+            var icon = document.getElementById("icon");
+
+            icon.onclick = function(){
+                if(bgSong.paused){
+                    bgSong.play ();
+                    icon.src = "./img/pause.png";
+                }else{
+                    bgSong.pause();
+                    icon.src = "./img/play.png";
+                }
+            }
+
+        </script>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100074047165826"><i class='bx bxl-facebook' ></i></a>
+          </div>  
+
+        </div>
+
+        <div class="home-image scroll-scale">
+            <div class="img-box">
+                <img src="img/Me.png" alt="">
+            </div>
+
+            <div class="liquid-shape">
+                <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+                <path fill="#FFB3C6">
+                  <animate attributeName="d"
+                      dur="20000ms"
+                      repeatCount="indefinite"
+                      values="
+                      M477.5,311Q462,372,399,385.5Q336,399,293,441.5Q250,484,200.5,453Q151,422,129,377.5Q107,333,65.5,291.5Q24,250,62.5,207Q101,164,128.5,126Q156,88,203,47Q250,6,309,26Q368,46,384.5,104.5Q401,163,447,206.5Q493,250,477.5,311Z;
+
+                      M432.5,289.5Q388,329,364,367.5Q340,406,295,448.5Q250,491,190,474Q130,457,108,401Q86,345,91.5,297.5Q97,250,72.5,191.5Q48,133,87,84.5Q126,36,188,26.5Q250,17,292.5,60Q335,103,399.5,114.5Q464,126,470.5,188Q477,250,432.5,289.5Z;
+
+                      M426,297Q412,344,390.5,400Q369,456,309.5,460.5Q250,465,212,423.5Q174,382,127,365Q80,348,51.5,299Q23,250,34.5,191Q46,132,94,97Q142,62,196,36Q250,10,290,61Q330,112,363.5,138.5Q397,165,418.5,207.5Q440,250,426,297Z;
+
+                      M439,311.5Q464,373,414.5,411Q365,449,307.5,454.5Q250,460,196.5,447.5Q143,435,105.5,395Q68,355,34.5,302.5Q1,250,27,193Q53,136,106.5,115Q160,94,205,50Q250,6,295,50Q340,94,396,113.5Q452,133,433,191.5Q414,250,439,311.5Z;
+
+                      M443,295Q406,340,381,387Q356,434,303,458Q250,482,192,466.5Q134,451,120,392Q106,333,71,291.5Q36,250,42.5,192Q49,134,96,99Q143,64,196.5,42Q250,20,296,55Q342,90,364.5,130.5Q387,171,433.5,210.5Q480,250,443,295Z;
+
+                      M442,294Q403,338,382.5,390.5Q362,443,306,452.5Q250,462,209.5,426Q169,390,126.5,368Q84,346,80.5,298Q77,250,82,203Q87,156,130,136Q173,116,211.5,83Q250,50,302.5,59Q355,68,371,119.5Q387,171,434,210.5Q481,250,442,294Z;
+
+                      M457,309Q454,368,409,407.5Q364,447,307,454.5Q250,462,202.5,438Q155,414,125,376.5Q95,339,54.5,294.5Q14,250,47.5,201.5Q81,153,119.5,121.5Q158,90,204,51Q250,12,288.5,64Q327,116,354,145Q381,174,420.5,212Q460,250,457,309Z;
+
+                      M477.5,311Q462,372,399,385.5Q336,399,293,441.5Q250,484,200.5,453Q151,422,129,377.5Q107,333,65.5,291.5Q24,250,62.5,207Q101,164,128.5,126Q156,88,203,47Q250,6,309,26Q368,46,384.5,104.5Q401,163,447,206.5Q493,250,477.5,311Z;
+                      "
+                  ></animate>
+              </path>
+            </svg>
+          </div>
+
+          <div class="liquid-shape">
+            <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+            <path fill="#FFB3C6">
+              <animate attributeName="d"
+                  dur="20000ms"
+                  repeatCount="indefinite"
+                  values="
+                  M477.5,311Q462,372,399,385.5Q336,399,293,441.5Q250,484,200.5,453Q151,422,129,377.5Q107,333,65.5,291.5Q24,250,62.5,207Q101,164,128.5,126Q156,88,203,47Q250,6,309,26Q368,46,384.5,104.5Q401,163,447,206.5Q493,250,477.5,311Z;
+
+                  M432.5,289.5Q388,329,364,367.5Q340,406,295,448.5Q250,491,190,474Q130,457,108,401Q86,345,91.5,297.5Q97,250,72.5,191.5Q48,133,87,84.5Q126,36,188,26.5Q250,17,292.5,60Q335,103,399.5,114.5Q464,126,470.5,188Q477,250,432.5,289.5Z;
+
+                  M426,297Q412,344,390.5,400Q369,456,309.5,460.5Q250,465,212,423.5Q174,382,127,365Q80,348,51.5,299Q23,250,34.5,191Q46,132,94,97Q142,62,196,36Q250,10,290,61Q330,112,363.5,138.5Q397,165,418.5,207.5Q440,250,426,297Z;
+
+                  M439,311.5Q464,373,414.5,411Q365,449,307.5,454.5Q250,460,196.5,447.5Q143,435,105.5,395Q68,355,34.5,302.5Q1,250,27,193Q53,136,106.5,115Q160,94,205,50Q250,6,295,50Q340,94,396,113.5Q452,133,433,191.5Q414,250,439,311.5Z;
+
+                  M443,295Q406,340,381,387Q356,434,303,458Q250,482,192,466.5Q134,451,120,392Q106,333,71,291.5Q36,250,42.5,192Q49,134,96,99Q143,64,196.5,42Q250,20,296,55Q342,90,364.5,130.5Q387,171,433.5,210.5Q480,250,443,295Z;
+
+                  M442,294Q403,338,382.5,390.5Q362,443,306,452.5Q250,462,209.5,426Q169,390,126.5,368Q84,346,80.5,298Q77,250,82,203Q87,156,130,136Q173,116,211.5,83Q250,50,302.5,59Q355,68,371,119.5Q387,171,434,210.5Q481,250,442,294Z;
+
+                  M457,309Q454,368,409,407.5Q364,447,307,454.5Q250,462,202.5,438Q155,414,125,376.5Q95,339,54.5,294.5Q14,250,47.5,201.5Q81,153,119.5,121.5Q158,90,204,51Q250,12,288.5,64Q327,116,354,145Q381,174,420.5,212Q460,250,457,309Z;
+
+                  M477.5,311Q462,372,399,385.5Q336,399,293,441.5Q250,484,200.5,453Q151,422,129,377.5Q107,333,65.5,291.5Q24,250,62.5,207Q101,164,128.5,126Q156,88,203,47Q250,6,309,26Q368,46,384.5,104.5Q401,163,447,206.5Q493,250,477.5,311Z;
+                  "
+                 ></animate>
+                </path>
+             </svg>
+            </div>
+        </div>
+
+    </section>
+
+    <!--future job----------------------------------------------------------------------->
+    <section id="about" class="about">
+      <div class="vid-about">
+        <iframe width="700" height="400" src="./How I See Myself 8 years from Now.mp4"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+        <div class="about-content scroll-scale">
+            <h2><span>How do I see myself 8 years from now?</span></h2>
+            <h3>A 'very' short video on envisioning an 8-year leap into the future</h3>
+            <p>In this 'very' short video, I'll be responding to the question, "How do you see yourself in 8 years from now?" The focus will be on detailing my aspirations and envisioning the person I strive to become. Feel free to tune in and watch!</span></p>
+        </div>
+
+    </section>
+
+    <!--blog posts---------------------------------------------------------------------->
+    <section id="blog" class="blog">
+      <div class="main-text scroll-scale">
+        <span>Learnings and Challenges</span>
+        <h2>IT-111 Blog Entries</h2>
+      </div>
+
+      <div class="section-blog scroll-bottom">
+        <div class="blog-box">
+            <i class='bx bxs-layer blog-icon'></i>
+            <h3>Beyond the Binary: Unraveling the Expansive World of Computer-Related Professions</h3>
+            <p>
+                The increasing ubiquity of computers leads to a continuously increasing potential for professions in computer-related sectors, offering a wide range of varied and expanding career options.
+            </p>
+            <div class="btn-box blog-btn">
+                <a href="./Post-Page1.html" class="btn">Read More!</a>
+            </div>
+        </div>
+        <div class="blog-box">
+            <i class='bx bx-desktop blog-icon' ></i>
+            <h3>Elevating Awareness: Understanding Cybersecurity Imperatives</h3>
+            <p>
+                A new generation of criminals and creative ways to commit crimes have emerged as a result of technological advancements. As participants in the digital culture, our safety is not guaranteed and we may be susceptible to potential risks.
+            </p>
+            <div class="btn-box blog-btn">
+                <a href="./Post-Page2.html" class="btn">Read More!</a>
+            </div>
+        </div>
+        <div class="blog-box">
+            <i class='bx bx-code-alt blog-icon' ></i></i>
+            <h3>HTML and CSS: The Building Blocks of the Digital Revolution</h3>
+            <p>
+                Web development has been the key to success in the digital age, providing the foundation for a great deal of advances and inventions in technology. There are two fundamental languages used for creating websites: HTML and CSS.
+            </p>
+            <div class="btn-box blog-btn">
+                <a href="./Post-Page3.html" class="btn">Read More!</a>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Flex Section-------------------------------------------------------------------->
+
+    <section id="flex" class="flex">
+        <div class="main-text scroll-scale">
+            <span>There are always facets of ourselves that we hold dear, unafraid to unveil with pride.</span>
+            <h2>Welcome to Flex Page</h2>
+        </div>
+
+        <div class="container">
+            <div class="fillter-buttons">
+                <button class="btn" data-filter="all">All</button>
+                <button class="btn" data-filter=".works">Works</button>
+                <button class="btn" data-filter=".memory">Cherishable Memories</button> 
+            </div>
+
+            <div class="flex-gallery scroll-bottom">
+                <div class="flex-box mix works">
+                    <div class="flex-image">
+                        <img src="./img/1.jpeg" alt="">
+                    </div>
+                    <div class="flex-content">
+                        <h3>Lighting Testing! :D</h3>
+                    </div>
+                </div>
+
+             <div class="flex-box mix works">
+                <div class="flex-image">
+                        <img src="./img/2.jpg" alt="">
+                    </div>
+                    <div class="flex-content">
+                        <h3>Kristina Pimenova</h3>
+                    </div>
+                </div>
+
+                <div class="flex-box mix works">
+                    <div class="flex-image">
+                        <img src="./img/3.jpg" alt="">
+                    </div>
+                    <div class="flex-content">
+                        <h3>Water Nymph</h3>
+                    </div>
+                </div>
+
+                <div class="flex-box mix works">
+                    <div class="flex-image">
+                        <img src="./img/4.jpeg" alt="">
+                    </div>
+                    <div class="flex-content">
+                        <h3>Sky Practice</h3>
+                    </div>
+                </div>
+
+                <div class="flex-box mix memory">
+                    <div class="flex-image">
+                        <img src="./img/5.jpg" alt="">
+                    </div>
+                    <div class="flex-content">
+                        <h3>Baby me crying for no reason</h3>
+                    </div>
+                </div>
+
+                <div class="flex-box mix memory">
+                    <div class="flex-image">
+                        <img src="./img/6.jpg" alt="">
+                    </div>
+                    <div class="flex-content">
+                        <h3>With High Honors!</h3>
+                    </div>
+                </div>
+
+                <div class="flex-box mix memory">
+                    <div class="flex-image">
+                        <img src="./img/7.jpg" alt="">
+                    </div>
+                    <div class="flex-content">
+                        <h3>:P</h3>
+                    </div>
+                </div>
+
+                <div class="flex-box mix memory">
+                    <div class="flex-image">
+                        <img src="./img/8.jpg" alt="">
+                    </div>
+                    <div class="flex-content">
+                        <h3>Me with friends at Rizal Park</h3>
+                    </div>
+                </div>
+
+                <div class="flex-box mix memory">
+                    <div class="flex-image">
+                        <img src="./img/9.jpg" alt="">
+                    </div>
+                    <div class="flex-content">
+                        <h3>Girls only mirror pic</h3>
+                    </div>
+                </div>
+
+                <div class="flex-box mix works">
+                    <div class="flex-image">
+                        <img src="./img/10.jpeg" alt="">
+                    </div>
+                    <div class="flex-content">
+                        <h3>Manobo Woman</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="./javascript/mixitup.min.js"></script>
+
+    <!---footer Website------------------------------------------------------------------->
+
+    <footer>
+        <p>Copyright &copy; 2023 by ParsCoder || All Right Reserved.</p>
+        <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+    </footer>
+
+    <script src="javascript/Jscript.js"></script>
+</body>
+</html>

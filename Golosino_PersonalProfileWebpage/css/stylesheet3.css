@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{ 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+:root{
+    --text-color: #f5f5f5;
+    --hover-color: #FFB3C6;
+    --bg-color: #000;
+    --second-bg-color: #292e33;
+    --big-font:2.5rem;
+    --norma-font:2rem;
+    --neon-box-shadow: 0.0 .5rem #FFB3C6;
+    --h2-font:3rem;
+    --font-neon-text-shadow:0 0 10px rgba(180, 38, 109, 0.8),
+    0 0 20px rgba(180, 38, 109, 0.8), 
+    0 0 30px rgba(180, 38, 109, 0.8),
+    0 0 40px rgba(180, 38, 109, 0.8),
+    0 0 70px rgba(180, 38, 109, 0.8),
+    0 0 80px rgba(180, 38, 109, 0.8),
+    0 0 100px rgba(180, 38, 109, 0.8),
+    0 0 150px rgba(180, 38, 109, 0.8);
+}
+
+::-webkit-scrollbar{
+    height: 0;
+    width: .5rem;
+}
+
+::-webkit-scrollbar-track{
+    background: var(--second-bg-color);
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--hover-color);
+    border-radius: 5rem;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg-color);
+    padding: 12px 10%;
+    border-bottom: 1px solid var(--second-bg-color);
+    transition: all 0.40s ease;
+}
+
+.logo{
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: "Poppins", sans-serif;
+}
+
+.logo span{
+    font-family: "Poppins", sans-serif;
+}
+
+span{
+    color: var(--hover-color)
+}
+
+.navlist{
+    display: flex;
+}
+ .navbar{
+    display: flex;
+}
+  .navbar a{
+    color: var(--text-color);
+    font-size: var(--hover-color);
+    font-weight: 600;
+    padding: 10px 25px;
+    margin: 0 2px;
+    border-radius: 0.5rem;
+    transition: all .40s ease;
+}
+  .navbar a:hover{
+    background: var(--hover-color);
+    color: #000;
+}
+  #menu-icon{
+    font-size: 36px;
+    color: var(--text-color);
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+  section{
+    padding: 160px 16% 90px;
+
+}
+.home-text h1{
+    margin: 20px 0;
+    font-size: var(--hover-color);
+    font-weight: bolder;
+    line-height: 1.1;
+    letter-spacing: 2px;
+    font-size: 80px;
+    text-shadow: 0 0 0.3rem #d45a79;
+}
+.home{
+    background-image: url(../img/Postpage3.png);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+  span{
+    color: var(--hover-color);
+}
+  .home-text h3{
+    color: var(--text-color);
+    font-size: 24px;
+    font-weight: 600;
+    margin: 20px 0;
+
+}
+
+.home-text .btn{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+  .btn{
+    display: inline-block;
+    padding: 14px 40px;
+    border-radius: 0.5rem;
+    font-size: 17px;
+    font-weight: 500;
+    background: var(--hover-color);
+    color: #000;
+    border: 1px solid var(--hover-color);
+    transition: all .40s ease;
+    box-shadow: 0 0 0.9rem #d45a79;
+    margin-top: 4rem;
+  }
+  .btn:hover{
+    transform: scale(1.01) translateY(-5px);
+    background: transparent;
+    border: 1px solid #d45a79;
+    color: var(--text-color);
+  }
+
+  .about .main-text{
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 17px;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+
+  .about h2{
+    align-items: center;
+    text-align: center;
+  }
+
+  .about span{
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    font-weight: 700;
+  }
+
+  .about p{
+    font-family: "Poppins", sans-serif;
+  }
+  /* footer css */
+footer{
+    padding: 1.5rem 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--second-bg-color);
+}
+
+footer p{
+    color: #bdbdbd;
+}
+
+footer a{
+    display: inline-flex;
+    justify-content: center;
+    color: var(--text-color);
+    background: var(--hover-color);
+    padding: .6rem;
+    border-radius: 5px;
+}
+
+footer a i{
+    font-size: 1rem;
+    color: var(--second-bg-color);
+}
+
+/* Break Points */
+@media(max-width:991px){
+    footer{
+        padding: 15px 5%;
+    }
+    section{
+        padding: 50px 5%;
+    }
+    :root{
+        --big-font:2.2rem;
+        --norma-font:1.8rem;
+        --neon-box-shadow: 0.0 .8rem #FFB3C6;
+        --h2-font:3rem;
+    }
+    .home-content{
+        margin-top: 5rem;
+    }
+}
+
+@media(max-width:768px){
+
+    .home{
+        grid-template-columns: 1fr;
+    }
+
+    .home-image{
+        margin-bottom: 5rem;
+    }
+
+    .about{
+        flex-direction: column-reverse;
+    }
+
+    footer p{
+        font-size: .8rem;
+    }
+}
+
+@media(max-width:420px){
+    html{
+        font-size: 80%;
+    }
+    footer p{
+        font-size: .6rem;
+    }  
+}
+
